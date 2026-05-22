@@ -8,16 +8,11 @@ FoodBridge is a location-aware Android application that bridges the gap between 
 
 ## 📱 Screenshots
 
-## 📱 Screenshots
-
-### Login Screen
-![Login Screen](assets/screenshots/loginPage.png)
-
-### Donor Dashboard
-![Donor Dashboard](assets/screenshots/donor.png)
-
-### NGO Nearby Food Map
-![NGO Map](assets/screenshots/ngo.png)
+<p align="center">
+  <img src="assets/screenshots/loginPage.png" width="250">
+  <img src="assets/screenshots/donor.png" width="250">
+  <img src="assets/screenshots/ngo.png" width="250">
+</p>
 ---
 
 ## ✨ Features
@@ -247,9 +242,9 @@ flutter_dotenv: latest
 | Phase 3 | Core Features — Donor Side | ✅ Done |
 | Phase 4 | Core Features — NGO Side | ✅ Done |
 | Phase 5 | Realtime & Live Updates | ✅ Done |
-| Phase 6 | UI Redesign & Polish | 🔄 In Progress |
-| Phase 7 | Testing & QA | ⏳ Upcoming |
-| Phase 8 | Deployment & Release | ⏳ Upcoming |
+| Phase 6 | UI Redesign & Polish | ✅ Done |
+| Phase 7 | Testing & QA | ✅ Done |
+| Phase 8 | Deployment & Release | ✅ Done |
 
 ---
 
