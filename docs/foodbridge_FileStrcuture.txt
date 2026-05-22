@@ -1,0 +1,16 @@
+foodbridge
+│
+├── frontend
+│   ├── src
+│   │   ├── pages
+│   │   ├── components
+│   │   ├── services
+│   │   └── utils
+│
+├── backend
+│   ├── routes
+│   ├── controllers
+│   ├── models
+│   └── middleware
+│
+└── docs

@@ -1,0 +1,90 @@
+Should Donors and NGOs Have Separate Models?
+
+Short answer:
+
+No — one User model is the correct architecture.
+
+Use role-based users.
+
+Why?
+
+Because both users share 90% of the same data.
+
+Correct Database Design
+
+One users collection:
+
+users
+foods
+pickupRequests
+User Model
+
+Example document:
+
+{
+ "_id": "...",
+ "name": "Helping Hands NGO",
+ "email": "ngo@test.com",
+ "role": "ngo",
+ "location": {
+   "type": "Point",
+   "coordinates": [72.8777, 19.076]
+ }
+}
+
+or
+
+{
+ "_id": "...",
+ "name": "Restaurant ABC",
+ "email": "restaurant@test.com",
+ "role": "donor",
+ "location": {
+   "type": "Point",
+   "coordinates": [72.8777, 19.076]
+ }
+}
+
+The role field controls permissions.
+
+role = donor
+role = ngo
+Why One Model Is Better
+
+If you create two models:
+
+donors
+ngos
+
+you will have problems with:
+
+authentication
+
+references
+
+duplicate logic
+
+complicated joins
+
+With one model:
+
+users
+
+
+foodbridge
+│
+├── users
+│     ├ name
+│     ├ email
+│     ├ role
+│     └ location
+│
+├── foods
+│     ├ donorId → users._id
+│     ├ location
+│     └ status
+│
+└── pickupRequests
+      ├ foodId → foods._id
+      ├ ngoId → users._id
+      └ status

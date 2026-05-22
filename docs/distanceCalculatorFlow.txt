@@ -1,0 +1,20 @@
+Restaurant posts food
+        ↓
+Food location saved in MongoDB
+        ↓
+NGO opens dashboard
+        ↓
+Frontend sends NGO GPS
+        ↓
+Backend calculates distance
+        ↓
+Nearby food listings returned
+
+
+
+1️⃣ Convert schema to geospatial
+2️⃣ Update create food API
+3️⃣ Replace manual nearby logic with MongoDB geospatial query
+4️⃣ Build pickup request system
+5️⃣ Add authentication
+6️⃣ Build frontend

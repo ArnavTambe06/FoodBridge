@@ -1,0 +1,13 @@
+Donor posts food
+        ↓
+Firestore stores listing
+        ↓
+NGO opens map
+        ↓
+Frontend sends location
+        ↓
+Backend filters nearby food
+        ↓
+Markers displayed
+        ↓
+NGO requests pickup
